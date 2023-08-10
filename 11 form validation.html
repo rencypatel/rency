@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <script>
+    function validateEmail(email) {
+      var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+    
+    function validateForm() {
+      var name = document.forms["contactForm"]["name"].value;
+      var email = document.forms["contactForm"]["email"].value;
+      var message = document.forms["contactForm"]["message"].value;
+
+      if (name === "" || email === "" || message === "") {
+        alert("All fields are required!");
+        return false;
+      }
+
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address!");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form name="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <input type="submit" id="submit-btn" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
