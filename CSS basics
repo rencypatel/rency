@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Basics Example</title>
+  <style>
+    /* Comments */
+    /* This is a comment in CSS */
+    
+    /* Colors and Backgrounds */
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    h1 {
+      color: #ff6600;
+    }
+    
+    /* Borders, Margins, Padding */
+    .box {
+      border: 2px solid #333;
+      margin: 20px;
+      padding: 10px;
+    }
+    
+    /* Height and Width */
+    .box {
+      width: 200px;
+      height: 150px;
+    }
+    
+    /* Box Model */
+    .content-box {
+      box-sizing: content-box;
+    }
+    .border-box {
+      box-sizing: border-box;
+    }
+    
+    /* Outline */
+    .outline-box {
+      outline: 2px dotted #ff6600;
+    }
+    
+    /* Text */
+    .text-style {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    /* Font */
+    .custom-font {
+      font-family: 'Arial', sans-serif;
+    }
+    
+    /* Icons */
+    .icon {
+      content: "\1F4E6";
+    }
+    
+    /* Links */
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    
+    /* Lists */
+    ul {
+      list-style-type: square;
+    }
+    
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    /* Display */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Basics Example</h1>
+  
+  <div class="box content-box">Content Box</div>
+  <div class="box border-box">Border Box</div>
+  
+  <div class="box outline-box">Outlined Box</div>
+  
+  <p class="text-style">Styled Text</p>
+  
+  <p class="custom-font">Custom Font</p>
+  
+  <p class="icon">Icon: 📦</p>
+  
+  <ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ul>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>abc</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>xyz</td>
+      <td>30</td>
+    </tr>
+  </table>
+  
+  <div class="flex-container">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </div>
+</body>
+</html>
